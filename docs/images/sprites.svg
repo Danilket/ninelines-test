@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol id="arrow" viewBox="0 0 55.375 39">
+	<path fill="#3e3d40" fill-rule="evenodd" d="M53.813 34.858a9.154 9.154 0 01-12.791 2.581L-.009 0l51.311 21.9a9.428 9.428 0 012.511 12.954z"/>
+</symbol>
+<symbol id="check" viewBox="0 0 13 10">
+	<path fill="#fff" fill-rule="evenodd" d="M0 6.2L1.685 5 5 8.8 3.315 10zM4.2 10L3 8.315 11.8 0 13 1.685z" data-name="Shape 6 copy"/>
+</symbol>
+<symbol id="checkbox" viewBox="0 0 19 19">
+	<rect width="19" height="19" class="cls-1" data-name="Rounded Rectangle 1" rx="5" ry="5"/>
+</symbol>
+<symbol id="meter" viewBox="0 0 253.031 126.937">
+	<path fill="#ffc815" fill-rule="evenodd" d="M-.012 126.931a125.713 125.713 0 0149.176-99.64L84.006 69.64c-18.658 14.64-28.428 31.948-28.428 57.291H-.012z"/>
+	<path fill="#a3cd3b" fill-rule="evenodd" d="M55.124 22.992a127.058 127.058 0 01145.817 0l-34.518 43.039c-14.684-9.917-26.3-12.2-38.387-12.2-12.056 0-26.188 4.358-38.352 12.2z"/>
+	<path fill="#0093d7" fill-rule="evenodd" d="M205.248 27.291a126.875 126.875 0 0147.792 99.64h-53.987c0-25.343-10.4-43.4-27.486-57.291z"/>
+</symbol>
+</svg>
