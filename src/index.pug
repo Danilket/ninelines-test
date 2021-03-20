@@ -1,0 +1,40 @@
+extends pug/base
+
+prepend vars
+	- title = 'Ninelines тестовое задание'
+append vars
+	- let name = ['Данил', 'Кетряну', 'Москва']
+	- let skills = [{name: 'HTML5', js: false, check: true}, {name: 'SASS', js: false, check: true}, {name: 'VANILLAJS', js: true, check: true}, {name: 'GIT', js: false, check: true}, {name: 'CSS3', js: false, check: true}, {name: 'LESS', js: false, check: false}, {name: 'ANGULAR', js: true, check: false}, {name: 'FOUNDATION', js: false, check: false}, {name: 'БЭМ', js: false, check: true}, {name: 'GULP', js: false, check: true}, {name: 'JQUERY', js: true, check: true}, {name: 'BOOTSTRAP', js: false, check: true}]
+	- link.icon = './images/favicon.ico'
+block content
+	header.header
+		.container.header__inner
+			img.header__photo(src="./images/photo.jpg" alt="")
+			ul.header__list
+				for i in name
+					li.header__item= i
+				li.header__item.header__item--contacts
+					span
+						| Тел: <a href="tel:+79268920125">+7 (926) 892 01 25</a>
+					span
+						| Почта: <a class="header__mail" href='mailto:danilket@mail.ru'>danilket@mail.ru</a>
+			img.header__stamp(src="./images/stamp.png" alt="")
+
+	section.skills
+		.container.skills__container
+			h2.skills__title.title
+				| Навыки
+			ul.skills__list
+				for i in skills
+					+ skillsItem(i.name, i.js, i.check)
+
+	footer.footer
+		.container.footer__inner
+			.footer__images
+				+ svg("meter").footer__meter
+				+ svg("arrow").footer__arrow
+			.footer__level
+				h2.footer__title.title
+					| Мой уровень владения Java Script
+				.footer__counter
+					| 0

@@ -1,0 +1,38 @@
+.footer {
+	&__inner {
+		display: flex;
+		padding: 57px 20px;
+	}
+
+	&__images {
+		position: relative;
+	}
+
+	&__meter {
+		@include size(253px, 127px);
+	}
+
+	&__arrow {
+		@include size(55px, 39px);
+
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-100%) rotate(-32deg);
+		transform-origin: 90% 90%;
+		transition: $duration-normal;
+	}
+
+	&__level {
+		margin: 7px 0 0 69px;
+		max-width: 220px;
+		line-height: 1.3;
+	}
+
+	&__counter {
+		margin-top: 7px;
+		font-weight: 900;
+		font-size: 50px;
+		color: #0093d7;
+	}
+}

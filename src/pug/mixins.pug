@@ -1,0 +1,21 @@
+include mixins/svg
+
+mixin jsSkill(jsSkill, check)
+	if(jsSkill && check)
+		input.checkbox__input-checkbox.checkbox-js(type="checkbox" checked)
+	else if(jsSkill)
+		input.checkbox__input-checkbox.checkbox-js(type="checkbox")
+	else if(check)
+		input.checkbox__input-checkbox(type="checkbox" checked)
+	else
+		input.checkbox__input-checkbox(type="checkbox")
+
+mixin skillsItem(skill, jsSkill, check)
+	li.skills__item
+		label.checkbox
+			.checkbox__inner
+				.checkbox__icons
+					+ jsSkill(jsSkill, check)
+					+ svg("checkbox").checkbox__checkbox
+					+ svg("check").checkbox__on
+				span= skill

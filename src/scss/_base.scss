@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 60px 0;
+	font-family: $font-family-roboto;
+	-webkit-font-smoothing: antialiased;
+	text-decoration-skip: objects;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	background-color: #f0f0f0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button:not([disabled]),
+a[role="button"]:not([disabled]) {
+	cursor: pointer;
+}
+
+.title {
+	margin: 0;
+	font-size: 18px;
+}

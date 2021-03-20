@@ -1,0 +1,53 @@
+.header {
+	&__inner {
+		position: relative;
+		display: flex;
+	}
+
+	&__photo {
+		@include size(139px, 139px);
+
+		border-radius: 50%;
+		object-fit: contain;
+	}
+
+	&__list {
+		flex: 1;
+		padding-left: 22px;
+		font-size: 12px;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		color: $color-grey;
+	}
+
+	&__item {
+		margin-top: 33px;
+		border-bottom: 2px solid $color-black;
+		padding-bottom: 7px;
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		&:first-child {
+			margin: 0;
+		}
+
+		&--contacts {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__mail {
+		text-transform: none;
+	}
+
+	&__stamp {
+		position: absolute;
+		right: 6px;
+		bottom: 11px;
+	}
+}

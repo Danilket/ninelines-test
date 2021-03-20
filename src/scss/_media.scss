@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+	.header {
+		&__inner {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__list {
+			margin-top: 30px;
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	.skills {
+		&__item {
+			flex-basis: 33.333%;
+		}
+	}
+
+	.footer {
+		&__inner {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__level {
+			margin: 40px 0 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		&__stamp {
+			width: 35%;
+		}
+	}
+
+	.skills {
+		&__item {
+			flex-basis: 50%;
+
+			&:nth-last-child(-n + 4) {
+				margin: 0;
+			}
+
+			&:nth-last-child(3),
+			&:nth-last-child(4) {
+				margin-bottom: 38px;
+			}
+		}
+	}
+}

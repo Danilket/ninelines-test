@@ -1,0 +1,98 @@
+.skills {
+	&__container {
+		padding-right: 0;
+		min-height: 220px;
+	}
+
+	&__title {
+		margin-top: 4px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 22px;
+		font-size: 12px;
+		color: $color-grey;
+	}
+
+	&__item {
+		display: inline-block;
+		flex-basis: 25%;
+		margin-bottom: 38px;
+		padding-right: 20px;
+		letter-spacing: 1.2px;
+
+		&:nth-last-child(-n + 4) {
+			margin: 0;
+		}
+	}
+}
+
+.checkbox {
+	display: inline-block;
+
+	span {
+		text-transform: uppercase;
+		transition: $duration-normal;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__icons {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 8px;
+	}
+
+	&__checkbox {
+		@include size(19px, 19px);
+
+		fill: #eee;
+		transition: $duration-normal;
+	}
+
+	&__on {
+		@include size(13px, 10px);
+
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transition: $duration-normal;
+	}
+
+	&:hover {
+		.checkbox__checkbox {
+			fill: #928c8b;
+		}
+
+		span {
+			color: $color-black;
+		}
+	}
+}
+
+.checkbox__input-checkbox:checked {
+	~ .checkbox__checkbox {
+		fill: #00f;
+	}
+
+	~ .checkbox__on {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+input[type="checkbox"] {
+	@include size(1px, 1px);
+
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
