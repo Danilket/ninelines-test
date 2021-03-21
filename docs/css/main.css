@@ -404,8 +404,11 @@ li {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
-  -o-object-fit: contain;
-     object-fit: contain; }
+  background-image: url("../images/photo.jpg");
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  background-repeat: no-repeat; }
 
 .header__list {
   -webkit-box-flex: 1;
@@ -475,7 +478,6 @@ li {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
   margin-bottom: 38px;
-  padding-right: 20px;
   letter-spacing: 1.2px; }
   .skills__item:nth-last-child(-n + 4) {
     margin: 0; }
@@ -502,21 +504,6 @@ li {
     cursor: pointer; }
   .checkbox__icons {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-right: 8px; }
   .checkbox__checkbox {
     width: 19px;
@@ -530,8 +517,14 @@ li {
     width: 13px;
     height: 10px;
     position: absolute;
+    right: 50%;
     opacity: 0;
     visibility: hidden;
+    -webkit-transform: translate(50%, 50%);
+       -moz-transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+         -o-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     -moz-transition: 0.4s;
